@@ -1,0 +1,352 @@
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Open Sans', serif;
+        background-color: white;
+        margin: 0 7px;
+        border: 7px solid black;
+        font-size: 10px;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    
+    header img {
+        height: 30px;
+        width: 30px;
+        margin-top: 6px;
+        margin-left: 20px;
+        padding-right: 0;
+    }
+    
+    header h6 {
+        font-size: 18px;
+        position: absolute;
+        left: 70px;
+        top: 10px;
+        margin-top: 10px;
+    }
+    
+    header {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        color: grey;
+    }
+    
+    header li {
+        list-style: none;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    
+    header button {
+        background-color: white;
+        color: rgb(39, 15, 173);
+        font-size: 10px;
+        border: 1.5px solid black;
+        /*text-align: center;*/
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        /*padding: 5px;
+    padding-top: 2px;*/
+        /*height: 10px;*/
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .mainc {
+        background-image: url("../img/mainc.jpg");
+        background-size: cover;
+        text-align: center;
+        height: 400px;
+        margin-top: 0;
+    }
+    
+    .mainc-elements {
+        margin: auto;
+        padding-top: 100px;
+    }
+    
+    .mainc h1 {
+        /*padding-top: 70px;*/
+        font-size: 30px;
+    }
+    
+    .mainc p {
+        font-size: 15px;
+    }
+    
+    button {
+        background-color: rgb(39, 15, 173);
+        border: none;
+        color: white;
+        /*text-align: center;*/
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 10%;
+        /*Iheight: 20px;*/
+        padding: 7px;
+        border-radius: 2px;
+    }
+    
+    .section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    
+    .section1 img {
+        border: 1px solid #ddd;
+        width: 30%;
+        height: 60%;
+        box-shadow: 10px 10px 5px grey;
+        margin-top: 25px;
+    }
+    
+    .section1 .ego {
+        width: 30%;
+        text-align: left;
+        font-size: 15px;
+    }
+    
+    .section1 ul {
+        background-color: #F8F8FF;
+        color: grey;
+        text-align: left;
+        padding: 10px;
+        padding-bottom: 0;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    
+    .section2 {
+        text-align: center;
+        font-size: 15px;
+        background-color: #F8F8FF;
+        /* padding: 10px 0;*/
+    }
+    
+    .section2flex ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+    
+    .section2flex li {
+        resize: both;
+        overflow: auto;
+        width: 100%;
+    }
+    
+    .section3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 80px;
+    }
+    
+    .section3 div {
+        text-align: left;
+        font-size: 15px;
+        width: 200px;
+    }
+    
+    .section3 button {
+        width: 35%;
+        line-height: 20px;
+    }
+    
+    .section3 img {
+        border: 1px solid #ddd;
+        width: 30%;
+        height: 30%;
+        box-shadow: 10px 10px 5px grey;
+    }
+    
+    footer {
+        background-image: url("../img/footers.jpg");
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 80px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 2px;
+    }
+    
+    .designer {
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    @media only screen and (max-width:800px) {
+        button {
+            width: 100%;
+            display: inline-block;
+            font-size: 6px;
+        }
+        button {
+            background-color: rgb(39, 15, 173);
+            border: none;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 20%;
+            padding: 7px;
+            border-radius: 2px;
+        }
+    }
+    
+    @media only screen and (max-width: 750px) {
+        .section1 img {
+            border: 1px solid #ddd;
+            width: 40%;
+            height: 50%;
+            box-shadow: 10px 10px 5px grey;
+        }
+        .section1 .ego {
+            width: 40%;
+            text-align: left;
+            font-size: 12px;
+        }
+        .section1 ul {
+            background-color: #F8F8FF;
+            color: grey;
+            text-align: left;
+            padding: 10px;
+            padding-bottom: 0;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        button {
+            background-color: rgb(39, 15, 173);
+            border: none;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 20%;
+            padding: 7px;
+            border-radius: 2px;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 10px;
+        }
+        .section1,
+        .section3 {
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+        }
+        s .section2flex ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            font-size: 10px;
+        }
+        .section1 .ego,
+        .section1 ul,
+        .section3 div {
+            text-align: center;
+            width: 100%;
+            font-size: 10px;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            background-color: rgb(39, 15, 173);
+            border: none;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 20%;
+            padding: 7px;
+            border-radius: 2px;
+        }
+        .mainc-elements,
+        footer {
+            font-size: 10px;
+        }
+    }
+    
+    @media only screen and (max-width: 300px) {
+        header {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .section1,
+        .section3 {
+            display: flex;
+            flex-direction: column;
+        }
+        .section2flex ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+        }
+        .section1 .ego,
+        .section1 ul,
+        .section3 div {
+            text-align: center;
+            width: 100%;
+            font-size: 10px;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            background-color: rgb(39, 15, 173);
+            border: none;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 20%;
+            padding: 7px;
+            border-radius: 2px;
+        }
+        .mainc-elements,
+        footer {
+            font-size: 10px;
+        }
+    }
